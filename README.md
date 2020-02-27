@@ -7,7 +7,9 @@ _In a team of n people, a celebrity is known by everyone but he/she doesn't know
 _You must clone the project from the github repository._
 
 ```
-when you have the cloned project. you must open the IDE and go to the FileReader class and on line 25 write the path where your file is This is a temporary adjustment.
+when you have the cloned project. 
+you must open the IDE and go to the FileReader class and on line 25 write 
+the path where your file is This is a temporary adjustment.
 ```
 
 ### Pre requirements 📋
