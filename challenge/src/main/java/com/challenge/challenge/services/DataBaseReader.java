@@ -17,6 +17,6 @@ public class DataBaseReader implements Reader {
 	 */
 	public List<KnownPerson> getKnows() {
 
-		return Collections.EMPTY_LIST;
+		return Collections.emptyList();
 	}
 }
