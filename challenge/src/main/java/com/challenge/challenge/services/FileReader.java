@@ -15,9 +15,13 @@ import com.challenge.challenge.model.Person;
 @Service
 public class FileReader implements Reader {
 
+	/**
+	 * 
+	 */
 	public List<KnownPerson> getKnows() {
 		List<KnownPerson> knows = new ArrayList<>();
 		try {
+			String filePath = new File("").getAbsolutePath();
 			Scanner input = new Scanner(new File("/home/d.valencia/Documents/test/file.txt"));
 			while (input.hasNextLine()) {
 				String[] person = input.nextLine().split(",");
