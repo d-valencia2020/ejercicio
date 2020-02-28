@@ -8,7 +8,7 @@ _You must clone the project from the github repository._
 
 ```
 when you have the cloned project. 
-you must open the IDE and go to the FileReader class and on line 25 write 
+you must open the IDE and go to the Properties class and change 
 the path where your file is This is a temporary adjustment.
 ```
 
