@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 import com.challenge.challenge.model.KnownPerson;
@@ -15,14 +17,16 @@ import com.challenge.challenge.model.Person;
 @Service
 public class FileReader implements Reader {
 
+	@Autowired
+	Environment env;
+
 	/**
 	 * 
 	 */
 	public List<KnownPerson> getKnows() {
 		List<KnownPerson> knows = new ArrayList<>();
 		try {
-			String filePath = new File("").getAbsolutePath();
-			Scanner input = new Scanner(new File("/home/d.valencia/Documents/test/file.txt"));
+			Scanner input = new Scanner(new File(env.getProperty("variable.ruta")));
 			while (input.hasNextLine()) {
 				String[] person = input.nextLine().split(",");
 				Person guess = new Person(Integer.parseInt(person[0]));
