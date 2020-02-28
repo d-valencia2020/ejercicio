@@ -38,7 +38,7 @@ _To have a development environment you must consider the following:_
 Download a development IDE.
 ```
 
-## Deployment_ 📦
+## Deployment 📦
 
 _A jar file must be generated for deployment_
 
